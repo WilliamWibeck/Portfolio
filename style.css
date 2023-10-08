@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 
 body {
-    background-image: linear-gradient(to bottom, #335c90, #2e598f, #28558f, #23528e, #1d4e8d, #175096, #0f519f, #0653a8, #005bbd, #0062d3, #0069e9, #0070ff);    background-attachment: fixed;
+    background-color: #212534;
     height: 100vh;
 }
 
@@ -11,6 +11,62 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.welcomeParagraph {
+    color: white;
+    z-index: 1;
+    font-size: 1.5rem;
+    margin: 1em;
+    
+}
+.landingBox {
+    height: 40vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    background: hsla(217, 100%, 50%, 1);
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+    position: relative;
+}
+
+.landingBox::before,
+.landingBox::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: hsla(217, 100%, 50%, 1);
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
+    border-radius: inherit;
+}
+
+.landingBox::after {
+    filter: blur(3.5rem);
+}
+
+.landingLeftBox {
+    background-color: #8eb3da;
+    width: 40%;
+    height: 100%;
+    max-height: 400px;
+}
+
+.landingRightBox {
+    background-color: #8eb3da;
+    width: 40%;
+    height: 100%;
+    max-height: 400px;
 }
 .navHolder {
     display: flex;
@@ -22,7 +78,7 @@ body {
 }
 
 .nav {
-    background-color: #000000;
+    background-color: #00000000;
     height: 10vh;
     width: 95vw;
     color: white;
@@ -68,12 +124,16 @@ body {
     justify-content: flex-start;
     margin-left: 1%;
     width: 10%;
+    background-color: rgba(128, 128, 128, 0.322);
+    border-radius: 15px;
+    min-width: 100px;
+    
 }
 
 .logo p {
     
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: bold;
 }
 
@@ -264,3 +324,4 @@ body {
 .contactInfo {
     
 }
+
