@@ -1,6 +1,3 @@
-import Typed from "typed.js";
+const element = document.getElementById('contactMe');
 
-const typed = new Typed('welcomeP', {
-  strings: ['TESTING'], 
-  typeSpeed: 50,
-});
+element.scrollIntoView();

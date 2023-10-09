@@ -7,32 +7,44 @@
     <script src="app.js"></script>
     <title>William's Portfolio</title>
 </head>
-<body style="color: white;">
-
+<body noselect style="color: white;">
+<section id="sectionId">
     <div class="navHolder">
         <nav class="nav">
-            <img src="/icons/LOGOWEBSITE.svg">
+            <p class="wLogo">W</p>
             <ul class="contentList">
-                <li> <a href="#contactMe">Contact</a></li>
+                <li> <a href="#contactMe" onclick="()=> {
+                    const element = document.getElementById('contactMe');
+                    element.scrollIntoView();
+                }">Contact</a></li>
                 <li> <a href="#projects">Projects</a></li>
                 <li> <a href="#aboutMe">About</a></li>
-                <li> <a href="#landingPage">Home</a></li>
+                <li> <a href="#sectionId">Home</a></li>
             </ul>
         </nav>
     </div>
+</section>
     <section class="landingPage" id="landingPage"> 
         <div class="landingContainer">
-            <div class="landingBox">
-                <p class="welcomeParagraph" id="welcomeP">
-                    
+            <div class="landingBox" id="typed-strings">
+                
+                <p class="welcomeParagraph">
+                    Hello. I'm William Wibeck 👋🏻
                 </p>
-
+                <p class="welcomeParagraph1">
+                   I'm a student at Medieinstitutet following my <br> passion for coding. 
+                </p>
+            
                 </div>
+               
             </div>
+            
         </div>
     </section>
     <section class="aboutMe" id="aboutMe">
-        <p>Hi! My name is William. I'm currently studying Front-end development at Medieinstitutet in Stockholm.</p>
+        <p class="aboutMeP">
+            Coding has become a genuine passion of mine. There's something incredibly satisfying about crafting code and seeing it come to life as functional web applications. I never expected to enjoy it this much, but the challenge and creativity involved have really captured my interest. I'm eager to turn this passion into a career by focusing on producing high-quality web applications. It's exciting to think about the potential impact I could make and the satisfaction of creating something that people can use and appreciate.
+        </p>
 
     </section>
     <section id="projects">
